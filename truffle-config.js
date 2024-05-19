@@ -22,11 +22,11 @@
  *
  */
 
-// const HDWallet = require('truffle-hdwallet-provider');
-// const infuraKey = "fj4jll3k.....";
-//
-// const fs = require('fs');
-// const mnemonic = fs.readFileSync(".secret").toString().trim();
+const HDWallet = require('truffle-hdwallet-provider');
+const infuraKey = "fe8ca2feaf9a454d9f9acbd9cc7271ba";
+
+const fs = require('fs');
+const mnemonic = fs.readFileSync(".secret").toString().trim();
 
 module.exports = {
   /**
@@ -79,6 +79,12 @@ module.exports = {
       // network_id: 2111,   // This network is yours, in the cloud.
       // production: true    // Treats this network as if it was a public net. (default: false)
     // }
+    sepolia: {
+      provider: () => new HDWallet(mnemonic, `https://sepolia.infura.io/v3/${infuraKey}`),
+      network_id: 11155111,
+      gas: 5500000,
+      gasPrice: 10000000000
+    },
   },
 
   // Set default mocha options here, use special reporters etc.

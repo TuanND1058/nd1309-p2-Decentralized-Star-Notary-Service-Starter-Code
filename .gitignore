@@ -18,3 +18,5 @@ yarn-error.log*
 
 #secret
 .secret
+
+node_modules
