@@ -11,4 +11,4 @@ Truffle:        v5.11.5 (core: 5.11.5)
 OpenZeppelin:   2.3
 
 ### Token Address
-Token Address: fe8ca2feaf9a454d9f9acbd9cc7271ba
+Token Address: 62f170c81c504b21965a46a355e69347
